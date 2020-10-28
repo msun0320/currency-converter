@@ -52,4 +52,8 @@ input {
 	main {
 		display: block;
 	}
+
+	input {
+		width: 85vw;
+	}
 }
