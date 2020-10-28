@@ -45,7 +45,8 @@ input {
 
 @media (max-width: 979px) {
 	div#root {
-		width: 100vw;
+		width: 90vw;
+		padding: 10px;
 	}
 
 	main {
