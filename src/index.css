@@ -43,7 +43,7 @@ input {
 .to-amount {
 	text-align: center;}
 
-@media (max-width: 979px) {
+@media (max-width: 768px) {
 	div#root {
 		width: 90vw;
 		padding: 10px;
