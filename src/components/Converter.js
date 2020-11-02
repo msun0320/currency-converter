@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Converter.css";
 
 const Converter = () => {
 	const [currencies, setCurrencies] = useState([]);
@@ -51,7 +52,7 @@ const Converter = () => {
 	};
 
 	return (
-		<>
+		<div className="Converter">
 			<div>
 				<label htmlFor="from">From</label><br />
 				<select name="from" id="from" value={fromCurrency} onChange={handleFromCurrencyChange}>
@@ -69,7 +70,7 @@ const Converter = () => {
 
 				<p className="to-amount">{toAmount !== "" ? Math.round(toAmount * 100) / 100 : ""}</p>
 			</div>
-		</>
+		</div>
 	);
 };
 
