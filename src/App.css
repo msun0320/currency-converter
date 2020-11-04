@@ -1,25 +1,9 @@
-body {
-	font-family: Arial, sans-serif;
-}
-
-div#root {
-	width: 800px;
+.Converter {
 	margin: auto;
-	padding: 70px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-}
-
-header {
-	text-align: center;
 }
 
 @media (max-width: 768px) {
 	body {
 		margin: 0;
-	}
-
-	div#root {
-		width: calc(100vw - 60px);
-		padding: 30px;
 	}
 }

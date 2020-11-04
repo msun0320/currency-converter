@@ -53,22 +53,26 @@ const Converter = () => {
 
 	return (
 		<div className="Converter">
-			<div>
-				<label htmlFor="from">From</label><br />
-				<select name="from" id="from" value={fromCurrency} onChange={handleFromCurrencyChange}>
-					{currencies.map(currency => <option value={currency[0]} key={currency[0]}>{currency[1]}</option>)}
-				</select><br />
+		    <h2>Always get the real exchange rate</h2>
 
-				<input type="number" defaultValue={fromAmount} onChange={handleFromAmountChange}/>
-			</div>
+		    <div className="Converter-body">
+			    <div>
+					<label htmlFor="from">From</label><br />
+					<select name="from" id="from" value={fromCurrency} onChange={handleFromCurrencyChange}>
+						{currencies.map(currency => <option value={currency[0]} key={currency[0]}>{currency[1]}</option>)}
+					</select><br />
 
-			<div>
-				<label htmlFor="to">To</label><br />
-				<select name="to" id="to" value={toCurrency} onChange={handleToCurrencyChange}>
-					{currencies.map(currency => <option value={currency[0]} key={currency[0]}>{currency[1]}</option>)}
-				</select>
+					<input type="number" defaultValue={fromAmount} onChange={handleFromAmountChange}/>
+				</div>
 
-				<p className="to-amount">{toAmount !== "" ? Math.round(toAmount * 100) / 100 : ""}</p>
+				<div>
+					<label htmlFor="to">To</label><br />
+					<select name="to" id="to" value={toCurrency} onChange={handleToCurrencyChange}>
+						{currencies.map(currency => <option value={currency[0]} key={currency[0]}>{currency[1]}</option>)}
+					</select>
+
+					<p className="to-amount">{toAmount !== "" ? Math.round(toAmount * 100) / 100 : ""}</p>
+				</div>
 			</div>
 		</div>
 	);
